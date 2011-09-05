@@ -1,0 +1,11 @@
+- if form_object.errors.any?
+  #error_explanation
+    %h2
+      = pluralize(form_object.errors.count, "error")
+      prohibited this 
+      = form_object.class.name.titleize
+      from being saved:
+
+    %ul
+    - form_object.errors.full_messages.each do |msg|
+      %li= msg

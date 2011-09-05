@@ -1,0 +1,10 @@
+= ActiveAdmin Pages
+
+This gem is a plugin for ActiveAdmin [http://activeadmin.info/] that provides a model and interface for static pages.
+
+It doesn't add anything to your routes, but something like "match '*path' => 'pages#show'
+" below your other routes will get the job done. Of course, you'll need a view and controller for pages#show!
+
+== License
+
+This project is released under the MIT-LICENSE.
