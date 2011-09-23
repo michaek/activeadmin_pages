@@ -10,7 +10,7 @@ module ActiveAdmin
     include Settings
     
     # TODO: This clobbers the default settings. It should extend them.
-    setting :load_paths, [File.expand_path('app/admin', Rails.root), "#{ActiveadminPages::Engine.root}/app/admin"]
+    setting :load_paths, ["#{ActiveadminPages::Engine.root}/app/admin", File.expand_path('app/admin', Rails.root)]
     
   end
 end
